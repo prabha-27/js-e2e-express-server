@@ -11,6 +11,11 @@ pool:
 
 steps:
 - task: NodeTool@0
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$Build.js-e2e-express-server-main'
+    Contents: '.tgz'
+    TargetFolder: '$Build.js-e2e-express-server-main/npm'
   inputs:
     versionSpec: '16.x'
   displayName: 'Install Node.js'

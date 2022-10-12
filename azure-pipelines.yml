@@ -29,7 +29,7 @@ steps:
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)/npm'
     artifactName: npm
-  displayName: 'Publish npm artifact'
+  displayName: 'js-e2e-express-server-main'
   inputs:
     versionSpec: '16.x'
   displayName: 'Install Node.js'
